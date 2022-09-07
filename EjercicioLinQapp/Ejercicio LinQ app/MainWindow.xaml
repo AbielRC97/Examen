@@ -1,0 +1,35 @@
+﻿<Window x:Class="Ejercicio_LinQ_app.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio_LinQ_app"
+        mc:Ignorable="d"
+        Title="Ejercicios LinQ" Height="850" Width="800">
+    <Grid Margin="-900,0,-683,-1207">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="792"/>
+            <ColumnDefinition Width="813*"/>
+            <ColumnDefinition Width="770*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="1.- Numeros Aleatorios del 1 al 100 orden Descendente" Grid.Column="2" HorizontalAlignment="Left" Height="57" Margin="143,43,0,0" VerticalAlignment="Top" Width="236" FontSize="14"/>
+        <ListBox Name="LstAleatorio1" Grid.Column="2" HorizontalAlignment="Left" Height="199" Margin="143,100,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label Content="2.- Numeros Primos lista anterior" Grid.Column="2" HorizontalAlignment="Left" Height="32" Margin="384,43,0,0" VerticalAlignment="Top" Width="151"/>
+        <ListBox Name="LstPrimos" Grid.Column="2" HorizontalAlignment="Left" Height="199" Margin="384,100,0,0" VerticalAlignment="Top" Width="83"/>
+        <Label Name="LblSuma" Content="Suma de Numeros Aleatorios" Grid.Column="2" HorizontalAlignment="Left" Margin="582,49,0,0" VerticalAlignment="Top"/>
+        <Label Content="4.- Numeros de la lista 1 en orden Ascendente" Grid.Column="2" HorizontalAlignment="Left" Margin="582,100,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="LstAleatorio2" Grid.Column="2" HorizontalAlignment="Left" Height="168" Margin="582,131,0,0" VerticalAlignment="Top" Width="61"/>
+        <Label Name="LblPromedio" Content="Numeros mayores al valor promedio :" Grid.Column="2" HorizontalAlignment="Left" Margin="146,310,0,0" VerticalAlignment="Top" Height="44" Width="182"/>
+        <ListBox Name="LstPromedio" Grid.Column="2" HorizontalAlignment="Left" Height="122" Margin="146,359,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="6.- Numeros Pares e Inpares" Grid.Column="2" HorizontalAlignment="Left" Margin="380,310,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="LstParInpar" Grid.Column="2" HorizontalAlignment="Left" Height="137" Margin="384,344,0,0" VerticalAlignment="Top" Width="151"/>
+        <Label Content="7.- Numero de veces que se repite el numero en la Lista" Grid.Column="2" HorizontalAlignment="Left" Margin="582,310,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="318" Height="44"/>
+        <ListBox Name="LstRepetido1" Grid.Column="2" HorizontalAlignment="Left" Height="137" Margin="582,359,0,0" VerticalAlignment="Top" Width="231"/>
+        <Label Content="8.- Numeros y veces Que Se Repiten" Grid.Column="2" HorizontalAlignment="Left" Margin="146,506,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="LstRepetido2" Grid.Column="2" HorizontalAlignment="Left" Height="108" Margin="152,538,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label Name="LblUnicos" Content="Sumatoria de Numeros Unicos : " Grid.Column="2" HorizontalAlignment="Left" Margin="399,524,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="LstUnico" Grid.Column="2" HorizontalAlignment="Left" Height="179" Margin="643,524,0,0" VerticalAlignment="Top" Width="134"/>
+
+    </Grid>
+</Window>
