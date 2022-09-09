@@ -1,0 +1,7 @@
+* Se pierde entre tantos proyectos, se emplea POO pero entre tanto proyectos se hace dificil la navegacion sin mencionar
+que los nombre de los proyectos no son descriptivos, a pesar que esta algunas cosas en poo aun falta reforzar la parte de patrones de diseño
+* falta documentacion en los metodos de tipo xml
+* Desarrollo incompleto seccion de contactos, no registra y faltan mas vistas para editar.
+* Desarrollo no se termino en tiempo y forma
+ Calidad: 7 
+
