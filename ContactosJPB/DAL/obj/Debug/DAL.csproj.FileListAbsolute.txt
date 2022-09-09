@@ -1,0 +1,9 @@
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\DAL\bin\Debug\DAL.dll
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\DAL\bin\Debug\DAL.pdb
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\DAL\bin\Debug\EN.dll
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\DAL\bin\Debug\EN.pdb
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\DAL\obj\Debug\DAL.dll
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\DAL\obj\Debug\DAL.pdb

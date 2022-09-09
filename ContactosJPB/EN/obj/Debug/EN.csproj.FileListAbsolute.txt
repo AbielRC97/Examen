@@ -1,0 +1,6 @@
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\EN\bin\Debug\EN.dll
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\EN\bin\Debug\EN.pdb
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\EN\obj\Debug\EN.csproj.AssemblyReference.cache
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\EN\obj\Debug\EN.csproj.CoreCompileInputs.cache
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\EN\obj\Debug\EN.dll
+C:\Users\jjpicazo\Documents\Proyectos\ContactosJPB\EN\obj\Debug\EN.pdb
