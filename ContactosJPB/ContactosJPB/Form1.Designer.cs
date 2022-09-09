@@ -75,6 +75,7 @@ namespace ContactosJPB
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(216, 20);
             this.TxtEmail.TabIndex = 3;
+            this.TxtEmail.Enter += new System.EventHandler(this.TxtEmail_Enter);
             this.TxtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.TxtEmail_Validating);
             // 
             // TxtPWD
@@ -84,6 +85,7 @@ namespace ContactosJPB
             this.TxtPWD.PasswordChar = '*';
             this.TxtPWD.Size = new System.Drawing.Size(216, 20);
             this.TxtPWD.TabIndex = 4;
+            this.TxtPWD.Enter += new System.EventHandler(this.TxtPWD_Enter);
             this.TxtPWD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPWD_KeyPress);
             // 
             // button1

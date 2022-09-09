@@ -373,6 +373,55 @@ namespace DAL
 
 
         }
+        public List<UsuarioEN> VCONTUsuario1(int id)
+        {
+
+            try
+            {
+                var lista = new List<UsuarioEN>();
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "VCONTUsuario";
+                cmd.Parameters.Clear();
+                cmd.Parameters.Add("@IdUsuario", SqlDbType.Int).Value = id;
+                cmd.Connection = conn as SqlConnection;
+                conn.Open();
+                var rset = cmd.ExecuteReader();
+
+                while (rset.Read())
+                {
+                    var usuario = new UsuarioEN();
+                    usuario.IdUsuario = Convert.ToInt32(rset["IdUsuario"]);
+                    usuario.Nombre = rset["Nickname"].ToString();
+                    usuario.FechaRegistro = Convert.ToDateTime(rset["FechaRegistro"].ToString());
+                    usuario.Email = rset["Email"].ToString();
+                    usuario.Contrasena = rset["Contrasena"].ToString();
+                    usuario.Estatus = Convert.ToBoolean(rset["Estatus"].ToString());
+
+                    lista.Add(usuario);
+                }
+
+                conn.Close();
+
+                return lista;
+
+            }
+            catch (SqlException ex)
+            {
+                conn.Close();
+                mensaje = ex.Message;
+                return null;
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                mensaje = ex.Message;
+                return null;
+
+            }
+
+
+        }
 
     }
 }

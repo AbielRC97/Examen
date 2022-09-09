@@ -89,6 +89,7 @@ namespace ContactosJPB
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(335, 20);
             this.TxtNombre.TabIndex = 4;
+            this.TxtNombre.Enter += new System.EventHandler(this.TxtNombre_Enter);
             this.TxtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNombre_KeyPress);
             // 
             // TxtEmail
@@ -98,6 +99,7 @@ namespace ContactosJPB
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(335, 20);
             this.TxtEmail.TabIndex = 5;
+            this.TxtEmail.Enter += new System.EventHandler(this.TxtEmail_Enter);
             this.TxtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.TxtEmail_Validating);
             // 
             // TxtPWD1
@@ -108,6 +110,7 @@ namespace ContactosJPB
             this.TxtPWD1.PasswordChar = '*';
             this.TxtPWD1.Size = new System.Drawing.Size(169, 20);
             this.TxtPWD1.TabIndex = 6;
+            this.TxtPWD1.Enter += new System.EventHandler(this.TxtPWD1_Enter);
             this.TxtPWD1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPWD1_KeyPress);
             // 
             // TxtPWD2
@@ -118,6 +121,7 @@ namespace ContactosJPB
             this.TxtPWD2.PasswordChar = '*';
             this.TxtPWD2.Size = new System.Drawing.Size(169, 20);
             this.TxtPWD2.TabIndex = 7;
+            this.TxtPWD2.Enter += new System.EventHandler(this.TxtPWD2_Enter);
             this.TxtPWD2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPWD2_KeyPress);
             // 
             // LblTitulo

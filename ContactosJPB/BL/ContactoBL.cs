@@ -52,6 +52,10 @@ namespace BL
         {
             return contactoDAL.SpCONTUsuarioValida(email, contrasena);
         }
+        public List<UsuarioEN> VCONTUsuario1(int id)
+        {
+            return contactoDAL.VCONTUsuario1(id);
+        }
 
     }
 }

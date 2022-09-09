@@ -128,10 +128,13 @@ namespace ContactosJPB
             // 
             // GVContacto
             // 
+            this.GVContacto.AllowUserToAddRows = false;
+            this.GVContacto.AllowUserToDeleteRows = false;
             this.GVContacto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GVContacto.Location = new System.Drawing.Point(35, 261);
             this.GVContacto.MultiSelect = false;
             this.GVContacto.Name = "GVContacto";
+            this.GVContacto.ReadOnly = true;
             this.GVContacto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GVContacto.Size = new System.Drawing.Size(359, 177);
             this.GVContacto.TabIndex = 7;
@@ -164,6 +167,7 @@ namespace ContactosJPB
             this.TxtNumero.Name = "TxtNumero";
             this.TxtNumero.Size = new System.Drawing.Size(137, 20);
             this.TxtNumero.TabIndex = 10;
+            this.TxtNumero.Enter += new System.EventHandler(this.TxtNumero_Enter);
             this.TxtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNumero_KeyPress);
             // 
             // TxtNombre
@@ -173,6 +177,7 @@ namespace ContactosJPB
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(423, 20);
             this.TxtNombre.TabIndex = 11;
+            this.TxtNombre.Enter += new System.EventHandler(this.TxtNombre_Enter);
             this.TxtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNombre_KeyPress);
             // 
             // TxtEmail
@@ -182,6 +187,7 @@ namespace ContactosJPB
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(423, 20);
             this.TxtEmail.TabIndex = 12;
+            this.TxtEmail.Enter += new System.EventHandler(this.TxtEmail_Enter);
             this.TxtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.TxtEmail_Validating);
             // 
             // TxtPWD1
@@ -192,6 +198,7 @@ namespace ContactosJPB
             this.TxtPWD1.PasswordChar = '*';
             this.TxtPWD1.Size = new System.Drawing.Size(163, 20);
             this.TxtPWD1.TabIndex = 13;
+            this.TxtPWD1.Enter += new System.EventHandler(this.TxtPWD1_Enter);
             this.TxtPWD1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPWD1_KeyPress);
             // 
             // TxtPWD2
@@ -202,6 +209,7 @@ namespace ContactosJPB
             this.TxtPWD2.PasswordChar = '*';
             this.TxtPWD2.Size = new System.Drawing.Size(163, 20);
             this.TxtPWD2.TabIndex = 14;
+            this.TxtPWD2.Enter += new System.EventHandler(this.TxtPWD2_Enter);
             this.TxtPWD2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPWD2_KeyPress);
             // 
             // CmbEstatus

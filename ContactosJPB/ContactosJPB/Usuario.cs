@@ -23,6 +23,43 @@ namespace ContactosJPB
             InitializeComponent();
         }
 
+        public void LlenaDatos()
+        {
+            var lista = contactoBL.VCONTUsuario1(Convert.ToInt32(usuario1));
+            int b = 0;
+
+            if(lista != null)
+            {
+                if (lista.Count() > 0)
+                {
+                    for (b = 0; b <= lista.Count() - 1; b++)
+                    {
+                        TxtNombre.Text = lista[b].Nombre.ToString();
+                        TxtEmail.Text = lista[b].Email.ToString();
+                        TxtPWD1.Text = lista[b].Contrasena.ToString();
+                        TxtPWD2.Text = lista[b].Contrasena.ToString();
+                        LblFechaReg.Text = lista[b].FechaRegistro.ToString();
+
+                        if (Convert.ToBoolean(lista[b].Estatus.ToString()))
+                        {
+                            CmbEstatus.SelectedIndex = 0;
+                        }
+                        else
+                        {
+                            CmbEstatus.SelectedIndex = 1;
+                        }
+
+                    }
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Error en la lectura de datos del usuario", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }
+
+        }
         public void LlenaConsulta()
         {
             
@@ -39,54 +76,6 @@ namespace ContactosJPB
 
         private void Usuario_Load(object sender, EventArgs e)
         {
-            string dato = "";
-
-            dato = contactoBL.VCONTUsuario(Convert.ToInt32(usuario1), "NickName");
-
-            if (dato.Length != 0)
-            {
-                TxtNombre.Text = dato;
-            }
-
-            dato = contactoBL.VCONTUsuario(Convert.ToInt32(usuario1), "Email");
-            if (dato.Length != 0)
-            {
-                TxtEmail.Text = dato;
-            }
-
-            dato = contactoBL.VCONTUsuario(Convert.ToInt32(usuario1), "Contrasena");
-            if (dato.Length != 0)
-            {
-                TxtPWD1.Text = dato;
-            }
-
-            dato = contactoBL.VCONTUsuario(Convert.ToInt32(usuario1), "Contrasena");
-            if (dato.Length != 0)
-            {
-                TxtPWD2.Text = dato;
-            }
-
-            dato = contactoBL.VCONTUsuario(Convert.ToInt32(usuario1), "Estatus");
-            if (dato.Length != 0)
-            {
-                //string texto1 = "";
-                if (Convert.ToBoolean(dato) )
-                {
-                    CmbEstatus.SelectedIndex = 0;
-                }
-                else
-                {
-                    CmbEstatus.SelectedIndex = 1;
-                }
-                //int indice = CmbEstatus.FindString(texto1);
-                //CmbEstatus.SelectedText = texto1;
-            }
-
-            dato = contactoBL.VCONTUsuario(Convert.ToInt32(usuario1), "FechaRegistro");
-            if (dato.Length != 0)
-            {
-                LblFechaReg.Text = dato;
-            }
 
             if (accion == "O")
             {
@@ -105,6 +94,7 @@ namespace ContactosJPB
                 GVContacto.Enabled = false;
             }
 
+            LlenaDatos();
             LlenaConsulta();
         }
 
@@ -442,6 +432,46 @@ namespace ContactosJPB
                 }
 
             }
+
+        }
+
+        private void TxtNombre_Enter(object sender, EventArgs e)
+        {
+            TextBox txtb1 = TxtNombre;
+            txtb1.SelectionStart = 0;
+            txtb1.SelectionLength = txtb1.Text.Length;
+
+        }
+
+        private void TxtEmail_Enter(object sender, EventArgs e)
+        {
+            TextBox txtb1 = TxtEmail;
+            txtb1.SelectionStart = 0;
+            txtb1.SelectionLength = txtb1.Text.Length;
+
+        }
+
+        private void TxtPWD1_Enter(object sender, EventArgs e)
+        {
+            TextBox txtb1 = TxtPWD1;
+            txtb1.SelectionStart = 0;
+            txtb1.SelectionLength = txtb1.Text.Length;
+
+        }
+
+        private void TxtPWD2_Enter(object sender, EventArgs e)
+        {
+            TextBox txtb1 = TxtPWD2;
+            txtb1.SelectionStart = 0;
+            txtb1.SelectionLength = txtb1.Text.Length;
+
+        }
+
+        private void TxtNumero_Enter(object sender, EventArgs e)
+        {
+            TextBox txtb1 = TxtNumero;
+            txtb1.SelectionStart = 0;
+            txtb1.SelectionLength = txtb1.Text.Length;
 
         }
     }

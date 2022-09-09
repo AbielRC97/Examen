@@ -154,5 +154,37 @@ namespace ContactosJPB
                 }
             }
         }
+
+        private void TxtNombre_Enter(object sender, EventArgs e)
+        {
+            TextBox txtb1 = TxtNombre;
+            txtb1.SelectionStart = 0;
+            txtb1.SelectionLength = txtb1.Text.Length;
+
+        }
+
+        private void TxtEmail_Enter(object sender, EventArgs e)
+        {
+            TextBox txtb1 = TxtEmail;
+            txtb1.SelectionStart = 0;
+            txtb1.SelectionLength = txtb1.Text.Length;
+
+        }
+
+        private void TxtPWD1_Enter(object sender, EventArgs e)
+        {
+            TextBox txtb1 = TxtPWD1;
+            txtb1.SelectionStart = 0;
+            txtb1.SelectionLength = txtb1.Text.Length;
+
+        }
+
+        private void TxtPWD2_Enter(object sender, EventArgs e)
+        {
+            TextBox txtb1 = TxtPWD2;
+            txtb1.SelectionStart = 0;
+            txtb1.SelectionLength = txtb1.Text.Length;
+
+        }
     }
 }
